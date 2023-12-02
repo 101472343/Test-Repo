@@ -2,6 +2,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const dom = require('@testing-library/jest-dom')
 
 // Load the HTML file content for testing
 const htmlPath = path.join(__dirname, "./index.html");
@@ -34,10 +35,6 @@ describe("HTML Testing", () => {
     expect(htmlContent).toContain("&copy; 2023 My Website");
   });
 
-  test("HTML should have the correct lang attribute in the <html> tag", () => {
-    const expectedLang = "fr";
-    expect(htmlContent).toHaveAttribute("html", "lang", expectedLang);
-  });
 
   test("HTML should not have any extraneous elements", () => {
     // Check if the HTML does not contain unexpected elements

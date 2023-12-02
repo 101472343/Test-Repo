@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.5"
   }
 }
- 
